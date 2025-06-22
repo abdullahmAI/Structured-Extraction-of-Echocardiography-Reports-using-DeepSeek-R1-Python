@@ -56,7 +56,7 @@ pip install pandas requests
 Start your Ollama model locally:
 ```
 ```bash
-ollama run llama3
+ollama run deepseek-r1:70b
 🚀 How to Use
 Add your .txt reports to the reports/ folder
 ```
