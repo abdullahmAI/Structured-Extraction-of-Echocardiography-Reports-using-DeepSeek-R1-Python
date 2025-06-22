@@ -22,7 +22,7 @@ The fields extracted are:
    - Optionally includes variable styles, abbreviations, and clinical phrasing
 
 2. **Model Inference:**  
-   - A prompt is sent to a locally running Ollama model (e.g., `llama3`)
+   - A prompt is sent to a locally running Ollama model (`DeepSeek-R1`)
    - The model parses and returns a structured JSON/dictionary with the target fields
 
 3. **Output:**  
@@ -75,9 +75,13 @@ Edit
 python echo_structuring.py
 Structured results will be saved to structured_output.csv
 ```
-✅ Example Output
-Enterprise Number	AVMG (mmHg)	EF (%)	TAVI	Execution Date
-45321	35	50	Yes	2023-05-22
+✅ Example Output:
+1- Enterprise Number --> 45321
+2-AVMG (mmHg) --> 35
+3-EF (%)	--> 50
+4- TAVI --> Yes
+5- Execution Date --> 2023-05-22
+				
 
 📌 Applications
 EMR preprocessing
