@@ -1,4 +1,4 @@
-# Structured-Extraction-of-Echocardiography-Reports-using-DeepSeek-R1-Python
+# Structured Extraction of Echocardiography Reports using DeepSeek-R1-Python
 
 This project automates the structuring of unstructured **echocardiography reports** into key clinical variables using a Python script integrated with a **locally running Ollama language model**.
 
