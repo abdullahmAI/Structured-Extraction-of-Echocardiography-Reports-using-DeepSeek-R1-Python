@@ -44,9 +44,6 @@ The fields extracted are:
 ├── ollama_config.json        # Optional config for prompts
 ```
 💡 Example Prompt
-json
-Copy
-Edit
 {
   "instruction": "Extract the following fields from this echo report: Enterprise Number, AVMG, EF, TAVI procedure (Yes/No), and Execution Date.",
   "input": "Echo report for patient with enterprise number 45321. EF: 50%, AVMG 35 mmHg. TAVI was performed on 22-May-2023."
@@ -55,14 +52,10 @@ Edit
 Install dependencies:
 
 ```bash
-Copy
-Edit
 pip install pandas requests
 Start your Ollama model locally:
 ```
 ```bash
-Copy
-Edit
 ollama run llama3
 🚀 How to Use
 Add your .txt reports to the reports/ folder
@@ -70,8 +63,6 @@ Add your .txt reports to the reports/ folder
 Run the script:
 
 ```bash
-Copy
-Edit
 python echo_structuring.py
 Structured results will be saved to structured_output.csv
 ```
