@@ -55,6 +55,7 @@ Install dependencies:
 pip install pandas requests
 Start your Ollama model locally:
 ```
+You must to add the medical reports in txt. file, after that:
 ```bash
 ollama run deepseek-r1:70b
 🚀 How to Use
