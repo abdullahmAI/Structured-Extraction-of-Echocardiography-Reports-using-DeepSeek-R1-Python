@@ -74,7 +74,7 @@ python echo_structuring.py
 Structured results will be saved to structured_output.csv
 ```
 ✅ Example Output:
-1- Enterprise Number --> 45321
+1- Enterprise Number --> 00000
 2-AVMG (mmHg) --> 35
 3-EF (%)	--> 50
 4- TAVI --> Yes
