@@ -15,7 +15,9 @@ The fields extracted are:
 4. **TAVI Procedure** (Yes/No)  
 5. **Execution Date** (Report date)
 
-## ⚙ How It Works
+##  How It Works
+
+**NOTE:** you must to install ollama model locally first
 
 1. **Input:**  
    - Raw echocardiography report (free text, English or Arabic)
