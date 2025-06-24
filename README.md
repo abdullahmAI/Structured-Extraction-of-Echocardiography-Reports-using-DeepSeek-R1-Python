@@ -2,12 +2,12 @@
 
 This project automates the structuring of unstructured **echocardiography reports** into key clinical variables using a Python script integrated with a **locally running Ollama language model**.
 
-## 🩺 Objective
+##  Objective
 
 Extract specific, structured data fields from free-text echocardiography reports for further analysis or database entry.  
 The fields extracted are:
 
-### 🔍 Extracted Fields
+###  Extracted Fields
 
 1. **Enterprise Number**  
 2. **Aortic Valve Mean Gradient (AVMG)**  
@@ -15,7 +15,7 @@ The fields extracted are:
 4. **TAVI Procedure** (Yes/No)  
 5. **Execution Date** (Report date)
 
-## ⚙️ How It Works
+## ⚙ How It Works
 
 1. **Input:**  
    - Raw echocardiography report (free text, English or Arabic)
@@ -28,14 +28,14 @@ The fields extracted are:
 3. **Output:**  
    - Clean tabular `.csv` or `.json` containing extracted data
 
-## 🧠 Technology Stack
+##  Technology Stack
 
 - **Ollama** (LLM runner) with model `DeepSeek-R1`
 - **Python 3** for parsing, prompting, and structuring
 - **Pandas** for saving and managing output
 - **Local-first design**: everything runs offline for privacy
 
-## 🗂 File Structure
+##  File Structure
 
 ```bash
 ├── echo_structuring.py       # Main script to process reports
@@ -43,12 +43,12 @@ The fields extracted are:
 ├── structured_output.csv     # Final structured data output
 ├── ollama_config.json        # Optional config for prompts
 ```
-💡 Example Prompt
+ Example Prompt
 {
   "instruction": "Extract the following fields from this echo report: Enterprise Number, AVMG, EF, TAVI procedure (Yes/No), and Execution Date.",
   "input": "Echo report for patient with enterprise number 45321. EF: 50%, AVMG 35 mmHg. TAVI was performed on 22-May-2023."
 }
-📦 Installation
+# Installation
 Install dependencies:
 
 ```bash
@@ -58,13 +58,17 @@ Start your Ollama model locally:
 You must to add the medical reports in txt. file, after that:
 ```bash
 ollama run deepseek-r1:70b
-🚀 How to Use
-Add your .txt reports to the reports/ folder
+```
+
+# How to Use?
+```bash
+Add your .txt reports to the script instead of current file
 ```
 Run the script:
 
 ```bash
 python echo_structuring.py
+```
 Structured results will be saved to structured_output.csv
 ```
 ✅ Example Output:
@@ -73,9 +77,9 @@ Structured results will be saved to structured_output.csv
 3-EF (%)	--> 50
 4- TAVI --> Yes
 5- Execution Date --> 2023-05-22
-				
+```				
 
-📌 Applications
+# Applications
 EMR preprocessing
 
 Clinical dashboard ingestion
@@ -84,10 +88,10 @@ Cardiovascular research datasets
 
 Privacy-preserving clinical NLP
 
-📜 License
+# License
 MIT License
 
-🙏 Acknowledgements
+# Acknowledgements
 Ollama for providing a lightweight local LLM interface
 
 Medical domain experts for defining the extraction schema
